@@ -112,17 +112,9 @@ const MenuItemWrapper: FC<MenuItemWrapperProps> = ({ MenuItemComponent, label, l
         }
     };
 
-    // Create a label with icon
-    const labelWithIcon = (
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-        <PluginIcon size="16" />
-        <span>{label}</span>
-        </div>
-    );
-
     return (
         <div
-        style={{ width: '100%' }}
+        //style={{ width: '100%' }}
         onMouseDown={(e) => {
             e.preventDefault();
             e.stopPropagation();
@@ -131,9 +123,11 @@ const MenuItemWrapper: FC<MenuItemWrapperProps> = ({ MenuItemComponent, label, l
         >
         <MenuItemComponent
         {...props}
-        label={labelWithIcon}
+        label={label}
         onActivate={handleLaunchKodi}
-        />
+        >
+            <PluginIcon/>
+        </MenuItemComponent>
         </div>
     )
 }
