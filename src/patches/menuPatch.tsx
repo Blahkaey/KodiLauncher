@@ -69,17 +69,17 @@ export const patchMenu = (launchKodi: () => Promise<{ success: boolean; message:
 
                 const newItem =
                 <MenuItemWrapper
-                route=""
-                label='Kodi'
-            onFocus={menuItemElement.props.onFocus}
-            MenuItemComponent={menuItemElement.type}
-            launchKodi={launchKodi}
-            />
+                    route="/kodi-launcher-no-route"
+                    label='Kodi'
+                    onFocus={menuItemElement.props.onFocus}
+                    MenuItemComponent={menuItemElement.type}
+                    launchKodi={launchKodi}
+                />
 
-            // Insert at position 3 (or customize as needed)
-            ret.props.children.splice(itemIndexes[2], 0, newItem)
+                // Insert at position 3 (or customize as needed)
+                ret.props.children.splice(itemIndexes[2], 0, newItem)
 
-            return ret
+                return ret
             })
             patchedInnerMenu = ret.props.children.props.children[0].type
         }
