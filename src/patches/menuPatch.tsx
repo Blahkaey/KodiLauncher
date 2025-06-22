@@ -112,6 +112,14 @@ const MenuItemWrapper: FC<MenuItemWrapperProps> = ({ MenuItemComponent, label, l
         }
     };
 
+    // Create a label with icon
+    const labelWithIcon = (
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+        <PluginIcon size="16" />
+        <span>{label}</span>
+        </div>
+    );
+
     return (
         <div
         style={{ width: '100%' }}
@@ -123,11 +131,9 @@ const MenuItemWrapper: FC<MenuItemWrapperProps> = ({ MenuItemComponent, label, l
         >
         <MenuItemComponent
         {...props}
-        label={label}
+        label={labelWithIcon}
         onActivate={handleLaunchKodi}
-        >
-        <PluginIcon />
-        </MenuItemComponent>
+        />
         </div>
     )
 }
