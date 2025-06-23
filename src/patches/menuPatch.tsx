@@ -142,6 +142,8 @@ const MenuItemWrapper: FC<MenuItemWrapperProps> = ({ MenuItemComponent, label, l
             handleLaunchKodi();
         }}
         >
+
+        {/* @ts-ignore - MenuItemComponent accepts children but types are incomplete */}
         <MenuItemComponent
         {...props}
         label={label}
