@@ -4,7 +4,7 @@ A Decky Loader plugin that adds a Kodi launch button to the Steam Deck UI's main
 
 ## Overview
 
-Kodi Launcher is designed specifically for use with the [Bazzite-Kodi-SteamOS](https://github.com/Blahkaey/Bazzite-Kodi-SteamOS) custom image, which includes a prebuilt Kodi GBM installation and supports seamless session switching between Kodi and the Steam Game UI.
+Kodi Launcher is designed specifically for use with the [Bazzite-Kodi-SteamOS](https://github.com/Blahkaey/Bazzite-Kodi-SteamOS) image, which includes a prebuilt Kodi GBM installation and supports seamless session switching between Kodi and the Steam Game UI.
 
 ## Features
 
@@ -14,13 +14,12 @@ Kodi Launcher is designed specifically for use with the [Bazzite-Kodi-SteamOS](h
 
 ## Requirements
 
-- Steam Deck or compatible device
-- [Bazzite-Kodi-SteamOS](https://github.com/Blahkaey/Bazzite-Kodi-SteamOS) custom image
+- [Bazzite-Kodi-SteamOS](https://github.com/Blahkaey/Bazzite-Kodi-SteamOS) image
 - [Decky Loader](https://github.com/SteamDeckHomebrew/decky-loader) installed
 
 ## Usage
 
-Once installed, you'll see a new "Kodi" button in the Steam UI's main navigation menu (alongside Library, Store, etc.). Simply click this button to launch Kodi and switch your session.
+Once installed, you'll see a new "Kodi" button in the Steam UI's main navigation menu (alongside Library, Store, etc.). Simply click this button to launch Kodi.
 
 ## How It Works
 
@@ -30,12 +29,4 @@ The plugin patches the Steam UI to inject a custom menu item that, when clicked,
 
 Special thanks to [@jessebofill](https://github.com/jessebofill) for the [DeckWebBrowser](https://github.com/jessebofill/DeckWebBrowser) plugin, which provided the foundation for the main navigation menu button implementation that was adapted for this project.
 
-## License
 
-This project is licensed under the BSD 3-Clause License - see the [LICENSE](LICENSE) file for details.
-
-## Support
-
-For issues specific to this plugin, please open an issue on this repository.
-
-For issues related to the Bazzite-Kodi-SteamOS image, please visit the [Bazzite-Kodi-SteamOS repository](https://github.com/Blahkaey/Bazzite-Kodi-SteamOS).
