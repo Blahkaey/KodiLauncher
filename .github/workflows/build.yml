@@ -39,8 +39,9 @@ jobs:
 
     - name: Build plugin
       run: |
-        # Build the plugin
-        $(pwd)/cli/decky plugin build -b -o $(pwd)/out -s directory .
+        sudo $(pwd)/cli/decky plugin build -b -o $(pwd)/out -s directory .
+
+        sudo chown -R $(whoami) $(pwd)/out
 
     - name: Upload plugin artifact
       uses: actions/upload-artifact@v4
