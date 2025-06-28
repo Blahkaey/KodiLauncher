@@ -46,11 +46,24 @@ jobs:
 
         sudo chown -R $(whoami) $(pwd)/out
 
+    - name: Repackage plugin with correct structure
+      run: |
+        cd out
+        unzip -q *.zip
+        rm *.zip
+
+        cd KodiLauncher
+        zip -r ../KodiLauncher.zip dist/ main.py package.json plugin.json LICENSE README.md
+
+        cd ..
+        rm -rf KodiLauncher
+
     - name: Upload plugin artifact
       uses: actions/upload-artifact@v4
       with:
         name: KodiLauncher
-        path: out/*.zip
+        path: out/KodiLauncher.zip
+        compression-level: 0
 
     - name: Create release
       if: github.event_name == 'push' && github.ref == 'refs/heads/main'
@@ -60,5 +73,5 @@ jobs:
         name: Build ${{ github.run_number }}
         draft: false
         prerelease: false
-        files: out/*.zip
+        files: out/KodiLauncher.zip
         token: ${{ secrets.GITHUB_TOKEN }}
