@@ -1,6 +1,6 @@
 # Kodi Launcher
 
-A Decky Loader plugin that adds a Kodi launch button to the Steam Deck UI's main navigation menu, enabling easy session switching between Steam and Kodi.
+A Decky Loader plugin that adds a Kodi launch button to the Steam GameMode main navigation menu, enabling easy session switching between Steam and Kodi.
 
 ## Overview
 
