@@ -4,7 +4,7 @@ A Decky Loader plugin that adds a Kodi launch button to the Steam GameMode main 
 
 ## Overview
 
-Kodi Launcher is designed specifically for use with the [Bazzite-Kodi-SteamOS](https://github.com/Blahkaey/Bazzite-Kodi-SteamOS) image, which includes a prebuilt Kodi GBM installation and supports seamless session switching between Kodi and the Steam Game UI.
+Kodi Launcher is designed specifically for use with the [Bazzite-Kodi](https://github.com/Blahkaey/Bazzite-Kodi) image, which includes a prebuilt Kodi GBM installation and supports seamless session switching between Kodi and the Steam Game UI.
 
 ## Features
 
@@ -14,7 +14,7 @@ Kodi Launcher is designed specifically for use with the [Bazzite-Kodi-SteamOS](h
 
 ## Requirements
 
-- [Bazzite-Kodi-SteamOS](https://github.com/Blahkaey/Bazzite-Kodi-SteamOS) image
+- [Bazzite-Kodi](https://github.com/Blahkaey/Bazzite-Kodi) image
 - [Decky Loader](https://github.com/SteamDeckHomebrew/decky-loader) installed
 
 ## Usage
